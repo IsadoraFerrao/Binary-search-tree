@@ -1,0 +1,18 @@
+#include <main.h>
+
+// -----------------------------------------  CEILLING  ------------------------------------------
+no_cat_t* ceilling(no_cat_t* no, int key){
+	no_cat_t* i;
+	if(no == NULL)
+		return NULL;
+	if(no->key == key)
+		return no;
+	if(no->key>key)
+		return  ceilling(no->dir, key);
+	i=ceilling(no->esq, key);
+	
+	if(i != NULL){
+		return i;
+	}else
+		return no;
+}

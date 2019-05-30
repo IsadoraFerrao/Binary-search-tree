@@ -1,0 +1,17 @@
+//-----------------------------------------------------MIN----------------------------------------------------------------
+int cat_minimo(no_cat_t* no){
+	if(no != NULL){
+		cat_minimo(no->esq);
+    		printf("CATEGORIA:%s - Chave[%d]\nELEMENTO MINIMO: %d\n\n", no->nome_categoria, no->key, prod_minimo(no->prods));
+    		cat_minimo(no->dir);
+	}
+}
+
+int prod_minimo(no_prod_t* no){
+	if(no->esq == NULL){
+		return no->key;
+	}
+	else{
+		return prod_minimo(no->esq);
+	}
+}

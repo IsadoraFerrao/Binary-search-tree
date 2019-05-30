@@ -1,0 +1,22 @@
+//------------------------------------------------OPTS SEQUENCE - HELP------------------------------------------------------------
+void print_usage() {
+	system("clear");
+    printf("Usage: <option1> <option2> ... <optionN>\n"
+        "\t-p <entrada_put.csv> [Inserir Elementos]\n"
+        "\t-g <entrada_get.csv> [Encontrar Nos da Arvore]\n"
+        "\t-d <entrada_delete.csv> [Deletar Nos da Arvore]\n"
+        "\t-c <entrada_contains.csv> [Buscar Nos da Arvore]\n"
+        "\t-s [Imprime o tamanho das Arvores]\n"
+        "\t-m [Imprime o menor No da Arvore]\n"
+        "\t-M [Imprime o maior No da Arvore]\n"
+        "\t-R <entrada_rank.csv> [Imprime o numero de Nos antes da Chave X]\n"
+        "\t-H [Imprime a altura das Arvores]\n"
+        "\t-F <entrada_floor.csv> [Encontrar o elemento mais proximo da chave X pela Esquerda]\n"
+        "\t-C <entrada_ceiling.csv> [Encontrar o elemento mais proximo da chave X pela Direita]\n"
+        "\t-I => [Imprime os elementos da arvore na forma Inorder]\n"
+        "\t-S <op_exec_seq> [Definir Sequencia de Execucao]\n"
+        "\t   => Operacoes Validas:\n" 
+        "\t   => Exemplo: -S pgdcRC\n" 
+    	"\t-Q => Sair do programa\n"
+    	"\t-h => Ajuda (Menu)\n");
+}

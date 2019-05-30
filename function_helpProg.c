@@ -1,0 +1,23 @@
+#include <main.h>
+
+//------------------------------------------------OPTS SEQUENCE - HELP---------------------------------------------------------
+void helpProg(char *prog) {
+
+	printf("Usage: %s <option1> <option2> ... <optionN>\n"\
+		"\t-p <entrada_put.csv> [Inserir novos elementos]\n"\
+		"\t-g <entrada_get.csv> [Mostra os elementos]\n"\
+		"\t-d <entrada_delete.csv> [Deleta elementos]\n"\
+		"\t-c <entrada_contains.csv> [Procura por elementos]\n"\
+		"\t-s [Imprime o SIZE de todas as árvores]\n"\
+		"\t-m [Imprime o MIN de todas as árvores]\n"\
+		"\t-M [Imprime o MAX de todas as árvores]\n"\
+		"\t-R <entrada_rank.csv> [Imprime o RANK]\n"\
+		"\t-H [Imprime a ALTURA de todas as árvores]\n"\
+		"\t-F <entrada_floor.csv> [Procura o FLOOR do nó]\n"\
+		"\t-C <entrada_ceiling.csv> [Procura o CEILING do nó]\n"\
+		"\t-I [Imprime todas as árvores em forma INORDER]\n"\
+		"\t-S <op_exec_seq> [Define a sequência das operações]\n"\
+		"\t   => Operações válidas: %s\n" \
+		"\t   => Exemplo: -S pgdcRC\n" \
+		"\t-h = Ajuda\n", prog, VALID_EXEC_OPTIONS);
+}
